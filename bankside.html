@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="">
+            <div class=" grid-cols-3 gap-4 ">
+
+            </div>
+            <div class="grid grid-cols-3 ">
+                <div class="bg-yellow-400 p-10 mt-5 rounded w-3/4 mx-auto  text-red-500 font-bold">
+                    <h4 class="text-2xl p-1 ">Deposit</h4>
+                    <h2 class="text-4xl text-green-700">$ <span id="deposit-total">00</span> </h2>
+                </div>
+                <div class="bg-blue-200 p-10 mt-5 rounded w-3/4 mx-auto font-bold">
+                    <h4 class="text-2xl text-blue-500">Withdraw</h4>
+                    <h2 class="withdraw-total text-4xl text-green-700 ">$<span id="withdraw-total">00</span> </h2>
+                </div>
+                <div class="bg-red-400 p-10 mt-5 rounded w-3/4 mx-auto font-bold ">
+                    <h4 class="text-2xl text-gray-800">Current Balance</h4>
+                    <h2 class="text-4xl text-green-700">$<span id="balance-total">1000</span> </h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-8">
+            <h2 class="text-4xl text-center text-red-400">Transation</h2>
+            <div class="grid grid-cols-2 w-4/4 
+    gap-3 rounded  ">
+                <div class="deposit bg-red-400 p-10 mx-10 mx-auto">
+                    <h1 class="deposit-heading text-blue-500 font-bold m-2 text-3xl">Please Deposit</h1>
+                    <input id="deposit-input" class="" type="taka">
+                    <br>
+                    <button id="deposit-button"
+                        class="mt-2 bg-blue-500 text-white font-bold border-2 px-3 py-2   border-b-2 border-fuchsia-600 ">Deposit
+                    </button>
+                </div>
+                <div class="deposit bg-green-400 p-10 mx-auto">
+                    <h1 class="deposit-heading text-black-500 font-bold m-2 text-3xl">Please Deposit</h1>
+                    <input id="withdraw-input" class="border-2 solid red" type="taka">
+                    <br>
+                    <button id="withdraw-button"
+                        class="mt-2 bg-blue-500 text-white font-bold border-2 px-3 py-2   border-b-2 border-fuchsia-600 ">Withdraw
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="taka.js"></script>
+</body>
+
+</html>
